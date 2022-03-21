@@ -149,7 +149,7 @@ class ResumePage extends Component {
 
   // bright side
   renderBrightSide = (resume) => {
-    console.log(resume)
+   // console.log(resume)
     return (
       <Segment className="section">
         <div class="ui medium header category-head">On the Bright Side</div>
@@ -184,6 +184,7 @@ class ResumePage extends Component {
           {this.renderCategoryList(resume.companiesRejectedFrom, '"Thank you for applying but..." Jobs/Programs', false)}
           {this.renderCategoryList(resume.clubsRejectedFrom, "Clubs that Weren't a Good Fit", false)}
           {this.renderCategoryList(resume.thingIsworeIdFinish, "Things I Swore I'd Finish But Never Did", false)}
+          {this.renderCategoryList(resume.thingsIwouldDoInstead, "Things I Would Do Instead of Business Trips and Meetings", false)}
           {this.renderCategoryList(resume.regrets, "Regrets I Have", false)}
           {this.renderCategoryList(resume.everydayLs, "Everyday L's", true)}
         </Grid>
