@@ -225,6 +225,8 @@ class ResumePage extends Component {
             {this.renderDivider(last)}
           </Grid.Row>
         )
+      } else {
+          return
       }
     } else {
       return
