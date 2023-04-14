@@ -28,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,5 +48,8 @@
     ]
   },
   "proxy": "http://18.221.87.140:3003",
-  "secure": "false"
+  "secure": "false",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }
